@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 嵌入插件測試頁面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .instructions {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .test-url {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 YouTube 嵌入插件測試頁面</h1>
+        
+        <div class="instructions">
+            <h3>測試步驟：</h3>
+            <ol>
+                <li>確保已安裝並啟用 YouTube 嵌入小廣告插件</li>
+                <li>點擊瀏覽器工具列中的插件圖標</li>
+                <li>輸入YouTube網址並調整設定：</li>
+                <ul>
+                    <li><strong>位置</strong>：選擇左下角或右下角</li>
+                    <li><strong>尺寸</strong>：200px - 500px</li>
+                    <li><strong>透明度</strong>：10% - 100%</li>
+                </ul>
+            </ol>
+            
+            <div class="test-url">
+                https://www.youtube.com/watch?v=ZB5wlhde-04
+            </div>
+            <div class="test-url">
+                https://www.youtube.com/watch?v=dQw4w9WgXcQ
+            </div>
+            <div class="test-url">
+                https://youtu.be/dQw4w9WgXcQ
+            </div>
+            <div class="test-url">
+                https://www.youtube.com/watch?v=jNQXAC9IVRw
+            </div>
+            
+            <p><strong>注意：</strong>如果出現錯誤，請按F12打開開發者工具查看Console中的錯誤訊息。</p>
+        </div>
+        
+        <div class="instructions">
+            <h3>故障排除：</h3>
+            <ul>
+                <li>如果顯示「無法在當前頁面嵌入影片」，請重新載入此頁面後再試</li>
+                <li>確保YouTube網址格式正確</li>
+                <li>檢查插件是否已正確安裝並啟用</li>
+                <li>某些網站可能有安全限制，請在簡單的HTML頁面測試</li>
+            </ul>
+        </div>
+        
+        <p style="text-align: center; color: #666; margin-top: 40px;">
+            這是一個測試頁面，用於驗證YouTube嵌入插件的功能
+        </p>
+    </div>
+</body>
+</html>

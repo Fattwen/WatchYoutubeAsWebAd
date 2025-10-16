@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube 嵌入小廣告",
+  "version": "1.0",
+  "description": "在當前頁面嵌入YouTube影片作為偽裝的小廣告",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube 嵌入小廣告"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["Faker.png","BG.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
